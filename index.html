@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>kneemah.com</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #EDEADE; /* soft white background */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    video {
+      width: 360px;      /* scaled width for 1080x1920 ratio */
+      height: 640px;     /* maintains portrait look */
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      background: #000;  /* fallback background */
+    }
+
+    @media (min-width: 1024px) {
+      video {
+        width: 540px;
+        height: 960px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>ats</h1>
+  <div class="video-container">
+    <video controls>
+      <source src="1-sd-wit-ma.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+
+    <video controls>
+      <source src="2-zhu.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</body>
+</html>
